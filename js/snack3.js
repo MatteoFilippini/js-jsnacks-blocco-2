@@ -7,6 +7,7 @@ lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
 const names = ['Matteo', 'Luca', 'Roberta',]
 const surnames = ['Filippini', 'Garda'];
 // CREO LA LISTA DI GATSBY
+const gatsby = [];
 // FINO A QUANDO LA LISTA DI GATSBY NON HA 3 NOMICOGNOMI DIVERSI LA RIEMPIO
     // PRENDO UN NOME E UN COGNOME A CASO
     // CONTROLLO CHE NON SIA IL LISTA
