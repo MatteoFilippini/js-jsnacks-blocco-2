@@ -11,16 +11,19 @@ const gatsby = [];
 // FINO A QUANDO LA LISTA DI GATSBY NON HA 3 NOMICOGNOMI DIVERSI LA RIEMPIO
 let i = 0;
 let nameSurname;
-while (i <= 3) {
+while (i < 3) {
     // PRENDO UN NOME E UN COGNOME A CASO
     const randomName = Math.floor(Math.random() * names.length);
     const randomSurname = Math.floor(Math.random() * surnames.length);
-    nameSurname = `${names[randomName]} ${surnames[randomSurname]}`; 
-    // LI METTO IN LISTA
-    gatsby[i]=nameSurname;
-    i++;
-}
-console.table(gatsby)
+    nameSurname = `${names[randomName]} ${surnames[randomSurname]}`;
+    console.log(nameSurname);
     // CONTROLLO CHE NON SIA IL LISTA
-    
-// STAMPO 
+    if (!(gatsby.includes(nameSurname))) {
+        // LI METTO IN LISTA 
+        gatsby[i] = nameSurname;
+        i++;
+    }
+}
+// STAMPO
+console.table(gatsby)
+
