@@ -9,7 +9,16 @@ const surnames = ['Filippini', 'Garda'];
 // CREO LA LISTA DI GATSBY
 const gatsby = [];
 // FINO A QUANDO LA LISTA DI GATSBY NON HA 3 NOMICOGNOMI DIVERSI LA RIEMPIO
+let i = 0;
+let nameSurname;
+while (i < 3) {
     // PRENDO UN NOME E UN COGNOME A CASO
+    const randomName = Math.floor(Math.random() * names.length);
+    const randomSurname = Math.floor(Math.random() * surnames.length);
+    nameSurname = `${names[randomName]} ${surnames[randomSurname]}`;
+    i++;
+}
+console.log(nameSurname)
     // CONTROLLO CHE NON SIA IL LISTA
     // LI METTO IN LISTA
 // STAMPO 
