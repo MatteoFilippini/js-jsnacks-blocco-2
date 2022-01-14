@@ -10,7 +10,11 @@ let sum = 0;
 for (let i = 0; i < num.length; i++) {
     if (num % 2 !== 0) sum += num[i];
 }
-
+// while
+let i = 0;
+while (i < num.length) {
+    if (num % 2 !== 0) sum += num[i];
+}
 // STAMPO
 console.table(num);
 console.log(sum);
